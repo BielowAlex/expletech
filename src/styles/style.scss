@@ -1,0 +1,32 @@
+@import "imports";
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+body{
+  background: var(--background-color);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1600px;
+  padding-left:80px;
+  padding-right:80px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    padding-left:20px;
+    padding-right:20px;
+  }
+}

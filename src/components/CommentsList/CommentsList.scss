@@ -1,0 +1,7 @@
+@import "../../styles/constants/mixins";
+
+.comments-list {
+  @include flex-col-cent;
+  gap: 20px;
+  max-width: 500px;
+}

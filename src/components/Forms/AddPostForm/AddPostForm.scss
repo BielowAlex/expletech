@@ -1,0 +1,50 @@
+@import "../../../styles/constants/mixins";
+
+.post_modal-form{
+  @include flex-col-cent;
+  gap: 20px;
+
+  &__item{
+    @include flex-col;
+    gap: 5px;
+    width: 80%;
+  }
+
+  &__lb{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  &__error{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+
+  &__in,&__ta{
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    resize: none;
+    height: 31px;
+    padding: 5px;
+  }
+
+  &__submit{
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: none;
+  }
+}

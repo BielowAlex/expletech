@@ -1,0 +1,26 @@
+@import "../../styles/constants/mixins";
+
+.comments {
+  width: 100%;
+
+  &-container {
+    padding: 20px 0;
+    @include flex-col-cent;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &-title {
+    @include flex-cent;
+    width: 100%;
+    cursor: default;
+
+    &__text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 26px;
+      color: var(--title-color);
+    }
+  }
+
+}

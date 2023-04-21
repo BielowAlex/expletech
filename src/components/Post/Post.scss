@@ -1,0 +1,77 @@
+@import "../../styles/constants/mixins";
+
+.post{
+  @include flex-col;
+  gap: 20px;
+  background:white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all ease .3s;
+  max-width: 70%;
+
+  &:hover{
+    box-shadow:1px 10px 10px rgba(0, 0, 0, 0.73);
+  }
+
+  &-author{
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--background-color);
+  }
+
+  &-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--post-title-color);
+    line-height: 1.2;
+  }
+
+  &-body{
+    @include flex-col-cent;
+    gap: 5px;
+
+    &__quote{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      padding: 40px;
+      color: var(--quote-color);
+      text-align: center;
+    }
+
+    &__quotes{
+      display: block;
+      overflow: hidden;
+      font-size: 48px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      height: 17px;
+      color: var(--quote-color);
+      cursor: default;
+    }
+
+    &__bot,&__head{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+
+      &-line{
+        flex: 0 auto;
+        background:var(--post-line-top);
+        height: 2px;
+        width: 100%;
+      }
+    }
+    &__bot{
+      &-line{
+        background: var(--post-line-bot);
+      }
+    }
+  }
+}

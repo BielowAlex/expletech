@@ -1,0 +1,39 @@
+@import "../../styles/constants/mixins";
+
+.posts{
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  height: fit-content;
+  z-index: 5;
+  &-container{
+    @include flex-col-cent;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .posts-list{
+    @include flex-cent;
+    z-index: 10;
+  }
+
+  &-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: hidden;
+
+    &__img{
+      z-index: 5;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../styles/constants/mixins";
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--header-back-color);
+  z-index: 1000;
+  &-container{
+    padding: 5px;
+    width: 100%;
+    @include flex-alc-jsb;
+  }
+
+  .upload-btn{
+    @include flex-cent;
+    gap: 5px;
+    background: var(--header-back-color);
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+
+    &__text{
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: var(--btn-color);
+      min-width: 80px;
+    }
+
+    &__img{
+      width: 15px;
+      height: 15px;
+      path{
+        fill: var(--btn-color);
+      }
+    }
+  }
+}
+
+.logo{
+  @include flex-cent;
+  gap: 5px;
+  &-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: var(--logo-color);
+  }
+  &-img{
+    width: 50px;
+    height: 60px;
+    path{
+      fill:var(--logo-color)
+    }
+  }
+}

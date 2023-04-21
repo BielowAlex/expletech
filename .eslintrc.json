@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/function-component-definition":"off",
+        "no-param-reassign": 0,
+        "linebreak-style": ["error", "windows"],
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "consistent-return": "off",
+        "no-nested-ternary": "off",
+        "label-has-associated-control": "off",
+        "react/no-unescaped-entities": "off",
+        "no-console": "off",
+        "max-len": "off",
+        "react/jsx-props-no-spreading": "off",
+        "prefer-destructuring": "off"
+    }
+}
